@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>Armazenamento de Dados</title>
+	<script type="text/javascript">
+		function AssignValues()
+		{
+			sessionSotrage.setItem("text1", document.form1.text1.value);
+			sessionSotrage.setItem("text2", document.form1.text1.value);
+			sessionSotrage.setItem("text3", document.form1.text1.value);
+		}
+
+		function Value1()
+		{
+			alert("Value 1 is"+sessionStorage.getItem("text1"));
+		}
+
+		function Value2()
+		{
+			alert("Value 2 is"+sessionStorage.getItem("text2"));
+		}
+
+		function Value3()
+		{
+			alert("Value 3 is"+sessionStorage.getItem("text3"));
+		}
+	</script>
+</head>
+
+<body>
+
+	<form name="form1">
+		<input type="text" name="text1" placeholder="Insira o texto...">
+		<br>
+		<input type="text" name="text2" placeholder="Insira o texto...">
+		<br>
+		<input type="text" name="text3" placeholder="Insira o texto...">
+		<br>
+		<input type="button" value="validar dados" onClick="AssignValues()">
+		<br>
+		<input type="button" value="Mostre o texto1" onClick="Value1()">
+		<br>
+		<input type="button" value="Mostre o texto2" onClick="Value2()">
+		<br>
+		<input type="button" value="Mostre o texto3" onClick="Value3()">
+		<br>
+	</form>
+</body>
+</html>
