@@ -13,12 +13,16 @@
 	   <meta name="robots" content="index,follow"/>
 	   <meta name="copyright" content="Copyright 2018"/>
 		<style>
-
-		    body {background-color:#ccffff;}
-		    h1 {color:#006699;}
-		    h2 {color:#0088cc;}
-		    h3 {color:#66ccff;}
-		    p {color:black;}	
+		    body {background-color:#e0ebeb;
+		    	font-family: Arial}
+		    h1 {color:#006699;
+		    	font-family: Arial}
+		    h2 {color:#0088cc;
+		    	font-family: Arial}
+		    h3 {color:#66ccff;
+		    font-family: Arial}
+		    p {color:black;
+		    	font-family: Arial}	
 			
 			input[type=text],select{
 		   	width:100%;
@@ -29,7 +33,6 @@
 		   	border-radius: 4px;
 		   	box-sizing:border-box;
 			}
-
 			input[type=date],select{
 		   	width:100%;
 		   	padding: 10px 20px;
@@ -39,7 +42,6 @@
 		   	border-radius: 4px;
 		   	box-sizing:border-box;
 			}
-
 			input[type=email],select{
 		   	width:100%;
 		   	padding: 10px 20px;
@@ -49,7 +51,6 @@
 		   	border-radius: 4px;
 		   	box-sizing:border-box;
 			}
-
 			input[type=tel],select{
 		   	width:100%;
 		   	padding: 10px 20px;
@@ -75,18 +76,58 @@
 		   	background-color:#45a049;
 			}
 		
-			div {
+			a:link 
+			{ 
+			text-decoration-color: none;
+			text-decoration:none; 
+			} 
+
+			.div1 {
+	           border-radius: 5px;
+	    	   background-color:#e0ebeb;
+	           padding:20px;
+	           color:black;
+         	}
+
+
+			.div2 {
 	           border-radius: 5px;
 	    	   background-color:#f2f2f2;
 	           padding:20px;
-          	}
+	        }
+
+          	ul{ list-style-type:none; }
+
+			li a:active{
+				background-color: #4CAF50;
+				color:white;
+			}
+			li a:hover:not(.active){
+				background-color: #555;
+				color:white;
+			}
+
+
+
+
 		</style>
 	</head>
 
 	<body>
 
+		<div class="div1"> 
+			<ul>
+
+			<li><a href="/home/aluno/fmedeiros/pagina1.html">Vinhos da Espanha </a>
+			<a href="/home/aluno/fmedeiros/pagina2.html">Vinhos da França</a>
+			</li>
+
+			</ul>
+		</div>
+
 		<h1>Faça seu cadastro</h1>
-		<div>
+		
+		<div class="div2">
 	    	<form>
 		 		<label for="sexo">Escolha seu gênero</label><br><br>
 		 		<input type="radio" name="sexo" value="homem" checked>Homem   
@@ -116,8 +157,6 @@
 
 
 
-<a href="/home/aluno/fmedeiros/pagina1.html">Vinhos da Espanha</a>
-<a href="/home/aluno/fmedeiros/pagina2.html">Vinhos da França</a>
 
 	</body>
 </html>
